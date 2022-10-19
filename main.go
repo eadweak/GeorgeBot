@@ -13,11 +13,11 @@ import (
 
 /* загружаем константные значения - Slack Channel ID, Token ID и App Token */
 
-const SlackAuthToken = "xoxb-167583481591-4223371008935-HXq90ylaJRikps07T1Gu0GVR"
-const SlackChannelId = "C034N63HHQF"
-const SlackAppToken = "xapp-1-A046ZSVBHMY-4238345761154-4c0b661fc284a2defd3b3ad1c699542c797caaf39138a120daab8289d5b4e30d"
+const SlackAuthToken = "MY_SLACK_AUTH_TOKEN"
+const SlackChannelId = "MY_SLACK_CHANNEL_ID"
+const SlackAppToken = "SLACK_APP_TOKEN"
 
-// const SlackVerificationToken = "WKpTuCfarLDrMQb8L9HfzOqY"
+// const SlackVerificationToken = "SLACK_VER_TOKEN"
 
 // определяем Slack-клиент
 var client = slack.New(SlackAuthToken, slack.OptionDebug(true), slack.OptionAppLevelToken(SlackAppToken))
