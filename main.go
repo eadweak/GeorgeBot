@@ -135,8 +135,8 @@ func handleEventMessage(event slackevents.EventsAPIEvent) error {
 func handleSlashCommand(command slack.SlashCommand, client *slack.Client) error {
 	// используем конструкцию switch/case для добавления команд
 	switch command.Command {
-	case "/getAlerts":
-		// команда /getAlerts
+	case "/hello":
+		// команда /hello
 		return handleHelloCommand(command, client)
 	}
 
